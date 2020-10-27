@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-candidate',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./candidate.component.css']
 })
 export class CandidateComponent implements OnInit {
+  @Input() imageUrl: string;
 
   constructor() { }
 

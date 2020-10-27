@@ -1,18 +1,5 @@
 <div class="container-fluid mx-auto my-auto text-center">
-  <div class="my-4 d-inline-block card-container" style="width: 20rem;">
-    <a  mat-flat-button class="card" target="_blank">
-        <img src="assets/images/logo1.4_white_web.svg" alt="" width="250" height="250">
-      </a>
-  </div>
-  <div class="my-4 d-inline-block card-container" style="width: 20rem;">
-    <a  mat-flat-button class="card" target="_blank">
-        <img src="assets/images/logo1.4.1_white_web.svg" alt="" width="250" height="250">
-      </a>
-  </div>
-
-  <div class="my-4 d-inline-block card-container" style="width: 20rem;">
-      <a  mat-flat-button class="card" target="_blank ">
-        <img src="assets/images/logo1.4.2_white_web.svg" alt="" width="250" height="250">
-      </a>
+  <div *ngFor="let link of Urls" class="d-inline-block">
+      <app-candidate [imageUrl]="link"></app-candidate>                
   </div>
 </div>

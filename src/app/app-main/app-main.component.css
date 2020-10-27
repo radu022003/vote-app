@@ -1,24 +1,3 @@
 
 
-.card-container{
-  border-radius: 50% !important;
-}
-  .card svg.material-icons path {
-    fill: #888;
-    border-radius: 50% !important;
-  }
 
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-    border-radius: 50% !important;
-  }
-
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-    border-radius:50% !important;
-  }
