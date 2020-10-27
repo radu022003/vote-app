@@ -1,5 +1,10 @@
 <div class="container-fluid mx-auto my-auto text-center">
-  <div *ngFor="let link of Urls" class="d-inline-block">
-      <app-candidate [imageUrl]="link"></app-candidate>                
+  <div [@listAnimation]="items.length"
+  (@listAnimation.start)="logAnimation($event)"
+  (@listAnimation.done)="logAnimation($event)"
+  >
+    <div *ngFor="let link of Urls" class="d-inline-block">
+        <app-candidate [imageUrl]="link"></app-candidate>                
+    </div>
   </div>
 </div>
