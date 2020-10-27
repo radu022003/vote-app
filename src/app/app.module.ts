@@ -8,6 +8,7 @@ import { AppMainComponent } from './app-main/app-main.component';
 
 import { AngularMaterialModule } from './angular-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CandidateComponent } from './candidate/candidate.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     AppHeaderComponent,
     AppFooterComponent,
-    AppMainComponent
+    AppMainComponent,
+    CandidateComponent
   ],
   imports: [
     BrowserModule,
